@@ -1,0 +1,27 @@
+<html>
+    <head>
+    <title>Er det onsdag?</title>
+    <script>
+        let day = (new Date()).getDay();
+        window.addEventListener('DOMContentLoaded', (event) => {
+            if (day === 3) {
+                document.querySelector('#yes').style.display = "initial";
+                document.title = "Er det onsdag? Ja!";
+            } 
+            else {
+                document.querySelector('#no').style.display = "initial";
+                document.title = "Er det onsdag? Nej!";
+            }
+        });
+    </script>
+    </head>
+    <body>
+        <div id="yes" style="display:none">
+            <h1>Ja!</h1>
+        </div>
+
+        <div id="no" style="display:none">
+            <h1>Nej!</h1>
+        </div>
+    </body>
+</html>
