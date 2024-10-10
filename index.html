@@ -1,6 +1,7 @@
 <html>
     <head>
     <title>Er det onsdag?</title>
+    <link rel="stylesheet" href="style.css">
     <script>
         let day = (new Date()).getDay();
         window.addEventListener('DOMContentLoaded', (event) => {
@@ -17,11 +18,31 @@
     </head>
     <body>
         <div id="yes" style="display:none">
-            <h1>Ja!</h1>
+            <div class="wrapper-1">
+                <div class="container-1">
+                    <img src="petpet.gif">
+                    <img src="petpet.gif">
+                    <img src="petpet.gif">
+                    Det er onsdag
+                    <img src="petpet.gif">
+                    <img src="petpet.gif">
+                    <img src="petpet.gif">
+                </div>
+            </div>
         </div>
 
         <div id="no" style="display:none">
-            <h1>Nej!</h1>
+            <div class="wrapper-2">
+                <div class="container-2">
+                <img src="bonik.gif">
+                <img src="bonik.gif">
+                <img src="bonik.gif">
+                    Det er ikke onsdag
+                <img src="bonik.gif">
+                <img src="bonik.gif">
+                <img src="bonik.gif">
+            </div>
+        </div>
         </div>
     </body>
 </html>
